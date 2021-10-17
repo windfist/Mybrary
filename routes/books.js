@@ -30,7 +30,7 @@ router.get('/', async (req, res) => {
 
 // New Book Route
 router.get('/new', async (req, res) => {
-  renderNewPage(res, new Book())
+  renderFormPage(res, new Book(), 'new')
 })
 
 // Create Book Route
